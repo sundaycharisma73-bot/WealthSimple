@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    /* border: 1px solid red; */
+}
+
+:root{
+    --font-display:'Playfair Display', serif;
+    --font-body:'DM Sans', sans-serif;
+    --font-text:'Lato', sans-serif;
+
+    --body:#FCFCFC;
+    --text:#2e2b29;
+    --muted:#666;
+    --border:#d9d4cd;
+    --bg:#f7f6f3;
+    --trust:#d8d3c7;
+    --dark:#2f2d2d;
+    --money:#e9e1df;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:var(--font-body);
+    background:var(--body);
+    color:var(--text);
+    overflow-x:hidden;
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+.container{
+    width:100%;
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 32px;
+}
+
+/* HEADER */
+
+header{
+    background:var(--body);
+}
+
+.topbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:18px 0;
+}
+
+.logo img{
+    height:26px;
+}
+
+.action-buttons{
+    display:flex;
+    gap:12px;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 0;
+    border-top:1px solid var(--border);
+    border-bottom:1px solid var(--border);
+    background:var(--body);
+}
+
+.nav-links,
+.nav-actions{
+    display:flex;
+    gap:28px;
+}
+
+.navbar a{
+    font-size:13px;
+}
+
+/*BUTTONS*/
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:12px 22px;
+    border-radius:999px;
+    font-size:13px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#222;
+    color:#fff;
+}
+
+.btn-secondary{
+    background:transparent;
+    border:1px solid #222;
+}
+
+/*HERO SECTION*/
+
+.hero{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:60px;
+    padding:70px 0;
+}
+
+.hero-copy{
+    max-width:430px;
+}
+
+.hero h1{
+    font-family:var(--font-display);
+    font-size:60px;
+    line-height:.95;
+    font-weight:400;
+    margin-bottom:24px;
+}
+
+.hero-text{
+    font-size:15px;
+    color:var(--muted);
+    line-height:1.7;
+    margin-bottom:28px;
+}
+
+.hero-image{
+    display:flex;
+    justify-content:flex-end;
+}
+
+/*FEATURES SECTION*/
+
+.feature-row{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+    padding-bottom:70px;
+}
+
+.feature-card{
+    border-top:1px solid #999;
+    padding-top:16px;
+}
+
+.feature-card h3{
+    font-family:var(--font-display);
+    font-size:22px;
+    font-weight:400;
+    margin-bottom:10px;
+}
+
+.feature-card p{
+    font-size:14px;
+    line-height:1.7;
+    color:var(--muted);
+}
+
+/*TRUST SECTION*/
+
+.trust{
+    background:var(--trust);
+    padding:80px 0;
+}
+
+.trust-top{
+    display:grid;
+    grid-template-columns:520px 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.trust-image img{
+    width:100%;
+    height:auto;
+    border-radius:8px;
+    object-fit:cover;
+}
+
+.trust-content{
+    max-width:420px;
+}
+
+.trust-content h2{
+    font-family:var(--font-display);
+    font-size:58px;
+    line-height:1;
+    font-weight:400;
+    margin-bottom:20px;
+}
+
+.trust-content p{
+    line-height:1.8;
+    color:#32302F;
+}
+
+.stats-row{
+    margin-top:70px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.stat-card{
+    border-top:1px solid #9f9b93;
+    padding-top:18px;
+}
+
+.stat-card h3{
+    font-family:var(--font-display);
+    font-size:42px;
+    font-weight:400;
+    margin-bottom:8px;
+}
+
+.stat-card p{
+    color:#555;
+}
+
+/*CASH SECTION*/
+
+.cash .section-title {
+    padding:20px;
+    margin-top:auto;
+    padding-top:40px;
+    border-bottom:2px solid #e4e4e4;
+}
+
+.cash .section-title{
+    font-family:var(--font-display);
+    font-size:50px;
+    font-weight:400;
+    line-height:1;
+    margin-bottom:70px;
+}
+
+.cash-card{
+    display:grid;
+    grid-template-columns:340px 460px;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.cash-image img{
+    width:100%;
+    height:auto;
+    border-radius:8px;
+    object-fit:cover;
+}
+.cash {
+    margin-top:auto;
+    padding-top:40px;
+    border-top:1px solid #e4e4e4;
+}
+
+.cash-content h3{
+    font-family:var(--font-display);
+    font-size:40px;
+    line-height:1.05;
+    margin-bottom:16px;
+}
+
+.cash-content p{
+    color:var(--muted);
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+/*INVESTING SECTION*/
+
+.investing{
+    padding:120px 0;
+    background:var(--body);
+}
+
+.investing .section-title{
+    font-family:var(--font-display);
+    font-size:50px;
+    font-weight:400;
+    line-height:1;
+    margin-bottom:70px;
+}
+
+.investing .section-title {
+    margin-top:auto;
+    padding:20px;
+    padding-top:40px;
+    border-bottom:2px solid #e4e4e4;
+}
+
+.investing-list{
+    display:grid;
+    gap:60px;
+}
+
+.investing-item{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.investing-content{
+    max-width:520px;
+    color:#32302F;
+}
+
+.tag{
+    display:inline-block;
+    font-size:12px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    color:#444;
+    margin-bottom:18px;
+}
+
+.investing-content h3{
+    font-family:var(--font-display);
+    font-size:40px;
+    line-height:1.05;
+    margin-bottom:16px;
+}
+
+.investing-content p{
+    color:var(--muted);
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.investing-image img{
+    width:100%;
+    height:100%;
+    border-radius:8px;
+    object-fit:cover;
+}
+
+/*BENEFITS SECTION*/
+
+.benefits{
+    background:#2e2c2c;
+    padding:100px 0;
+}
+
+.benefits-grid{
+    display:grid;
+    grid-template-columns:1fr 280px 280px;
+    gap:28px;
+    align-items:start;
+}
+
+.benefits-copy{
+    color:white;
+    max-width:320px;
+}
+
+.benefits-copy h2{
+    font-size:60px;
+    line-height:1;
+    margin-bottom:22px;
+}
+
+.benefits-copy p{
+    line-height:1.7;
+    margin-bottom:28px;
+}
+
+.benefit-card{
+    min-height:250px;
+    border-radius:8px;
+    padding:26px;
+}
+
+.benefit-card.light{
+    background:#f2efea;
+}
+
+.benefit-card.dark{
+    background:#000;
+    color:white;
+}
+
+.benefit-card span{
+    font-size:11px;
+    letter-spacing:1px;
+}
+
+.benefit-card h3{
+    font-family:var(--font-display);
+    font-size:38px;
+    margin:20px 0;
+}
+
+.benefits-copy .btn{
+    margin-top:20px;
+    background:#fff;
+    color:#000;
+    border:none;
+    padding:12px 22px;
+    border-radius:999px;
+    font-size:13px;
+    font-weight:600;
+}
+
+/*MONEY WORTH SECTION*/
+
+.money-worth{
+    position: relative;
+    padding: 2em 0;
+    background:url(image/image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.center{
+    text-align:center;
+}
+
+.money-worth h2{
+    font-family:var(--font-display);
+    font-size:68px;
+    font-weight:400;
+    line-height:1;
+    margin-bottom:20px;
+}
+
+.money-worth p{
+    margin-bottom:30px;
+}
+
+/*FOOTER SECTION*/
+
+.footer{
+    background:var(--body);
+    padding:90px 0 50px;
+}
+
+
+.footer-top{
+    display:grid;
+    grid-template-columns:260px 1fr;
+    gap:120px;
+    align-items:start;
+    padding-bottom:50px;
+}
+
+.tldr h2{
+    font-size:38px;
+    font-weight:700;
+    margin-bottom:12px;
+}
+
+.tldr p{
+    font-size:13px;
+    line-height:1.6;
+    max-width:220px;
+}
+
+.tldr a{
+    display:inline-block;
+    margin-top:12px;
+    font-size:12px;
+    color:#444;
+    font-weight:600;
+}
+
+.subscribe{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+
+.subscribe-row{
+    display:flex;
+    gap:12px;
+}
+
+.subscribe p {
+    line-height:1.7;
+    font-size:12px;
+}
+
+.subscribe-row input{
+    flex:1;
+    height:52px;
+    border:1px solid #ddd;
+    border-radius:999px;
+    padding:0 22px;
+    background:#fff;
+}
+
+.subscribe-row button{
+    height:52px;
+    padding:0 26px;
+    border:none;
+    border-radius:999px;
+    background:#2f2d2d;
+    color:#fff;
+}
+
+/* .footer-line{
+    height:1px;
+    background:#e4e4e4;
+    margin:0 0 45px;
+} */
+
+.footer-links {
+    margin-top:auto;
+    padding-top:40px;
+    border-top:1px solid #e4e4e4;
+}
+
+.footer-links{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1.2fr 1.2fr 1fr 1fr;
+    gap:25px;
+}
+
+.footer-links h4{
+    font-size:12px;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+.footer-links ul{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.footer-links a{
+    font-size:12px;
+    color:#444;
+}
+
+.footer-language{
+    margin-top:45px;
+    padding-top:30px;
+    border-top:1px solid #e4e4e4;
+}
+
+.footer-language select{
+    height:34px;
+    border-radius:999px;
+    border:1px solid #ccc;
+    padding:0 16px;
+    background:#fff;
+}
+
+.footer-copy{
+    margin-top:25px;
+    font-size:11px;
+    color:#666;
+    line-height:1.6;
+    max-width:720px;
+}
+
+/* FINANCIAL ADVICE SECTION */
+
+.investing-item-advice {
+    gap: 80px;
+    align-items: flex-start;
+}
+
+.advisor-image img {
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.advisor-caption {
+    font-size: 9px;
+    font-weight: 600;
+    color: #555;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.advice-content {
+    padding-top: 10px;
+}
+
+.advice-content h3 {
+    font-size: 52px;
+    margin-bottom: 40px;
+    font-family: var(--font-display);
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--text);
+}
+
+.advice-option {
+    margin-bottom: 30px;
+}
+
+.advice-option:last-child {
+    margin-bottom: 0;
+}
+
+.advice-option h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.advice-option p {
+    font-size: 14px;
+    margin-bottom: 0;
+    color: #444;
+    line-height: 1.6;
+}
+
+.link-underline {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color: var(--text);
+}
